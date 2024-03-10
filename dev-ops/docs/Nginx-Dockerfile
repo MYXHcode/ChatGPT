@@ -1,0 +1,13 @@
+FROM nginx:latest
+
+RUN echo "deb http://nginx.org/packages/mainline/ubuntu $(lsb_release -cs) nginx" > /etc/apt/sources.list.d/nginx.list && \
+    wget -qO - http://nginx.org/keys/nginx_signing.key | apt-key add - && \
+    apt-get update && \
+    apt-get build-dep -y nginx && \
+    cd /usr/src/nginx && \
+    wget https://raw.githubusercontent.com/nginx/nginx/master/debian/rules && \
+    sed -i '/--with-http_gzip_static_module/a --with-http_auth_request_module \\' rules && \
+    dpkg-buildpackage -b && \
+    dpkg -i /usr/src/*.deb
+
+# docker build -t my-nginx .

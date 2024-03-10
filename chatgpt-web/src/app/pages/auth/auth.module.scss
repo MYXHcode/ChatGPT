@@ -1,0 +1,64 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+
+  .auth-logo {
+    transform: scale(1.4);
+  }
+
+  .auth-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2;
+  }
+
+  .auth-sub-title {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .auth-tips {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .auth-input {
+    margin: 3vh 0 0 0;
+    width: 300px;
+  }
+
+  .auth-error {
+    color: #ff5500;
+    font-size: 12px;
+    margin-top: 1vh;
+  }
+
+  .auth-actions {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    button:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .break-line {
+    /* 确保不忽略空白字符 */
+    white-space: normal;
+
+    /* 当单词太长时，确保单词可以被拆分换行 */
+    word-wrap: break-word;
+
+    /* 同样的作用，作为word-wrap的备用属性 */
+    overflow-wrap: break-word;
+
+    /* 居中显示文本 */
+    text-align: center;
+  }
+}

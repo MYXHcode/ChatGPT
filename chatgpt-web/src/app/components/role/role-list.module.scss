@@ -1,0 +1,25 @@
+.role-list {
+  height: 100%; /* 设置一个固定高度 */
+  overflow: scroll; /* 添加滚动条 */
+  padding: 12px 0;
+
+}
+
+.role-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  padding: 12px;
+
+}
+
+.name {
+  flex: 1;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.selected {
+  background-color: rgb(240, 240, 240);
+}
