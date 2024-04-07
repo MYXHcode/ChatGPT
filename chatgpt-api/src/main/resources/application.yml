@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+# 微信公众号配置信息
+# originalid：原始 ID
+# appid：个人 AppID
+# token：开通接口服务自定义设置
+wx:
+  config:
+    originalid: gh_8aed07a01479
+    appid: wxa175a0b560bd00a2
+    token: MYXH

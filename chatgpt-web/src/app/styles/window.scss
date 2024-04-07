@@ -1,0 +1,77 @@
+.window-header {
+  padding: 14px 20px;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-header-title {
+  max-width: calc(100% - 100px);
+  overflow: hidden;
+
+  .window-header-main-title {
+    font-size: 20px;
+    font-weight: bolder;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    max-width: 50vw;
+  }
+
+  .window-header-sub-title {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+
+.window-actions {
+  display: inline-flex;
+}
+
+.window-action-button {
+  margin-left: 10px;
+}
+
+// 媒体查询，针对小屏幕进行样式调整
+@media (max-width: 768px) {
+  .window-header {
+    // 减少内边距以适应小屏幕
+    padding: 10px 15px;
+  }
+  .window-header-title {
+    // 减少标题的最大宽度，为动作按钮留出空间
+    max-width: calc(100% - 50px);
+
+    .window-header-main-title {
+      // 减小主标题字体大小
+      font-size: 16px;
+
+      // 减小主标题的最大宽度
+      max-width: 40vw;
+    }
+
+    .window-header-sub-title {
+      // 减小副标题字体大小
+      font-size: 12px;
+
+      // 减小副标题的上下边距
+      margin-top: 3px;
+    }
+  }
+  .window-actions {
+    // 在小屏幕上，您可能想要堆叠动作按钮或调整它们的位置
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .window-action-button {
+    // 移除按钮之间的水平间距，因为我们现在使用垂直堆叠
+    margin-left: 0;
+
+    // 添加垂直间距
+    margin-top: 10px;
+  }
+}

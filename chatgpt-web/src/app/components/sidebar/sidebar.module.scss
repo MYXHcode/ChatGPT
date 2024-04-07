@@ -1,0 +1,62 @@
+.sidebar {
+  top: 0;
+  width: var(--sidebar-width);
+  height: var(--full-height);
+  position: relative;
+  background-color: #F5F5F5;
+}
+
+.sidebar-header {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  position: relative;
+  margin: 45px auto 0;
+  border: #c7c7c7 1px solid;
+}
+
+.sidebar-chat {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 24px auto 0;
+}
+
+.sidebar-role {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 15px auto 0;
+}
+
+.sidebar-mall {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 15px auto 0;
+}
+
+.sidebar-git {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  display: block;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.action-button {
+  display: inline-flex;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.action-button svg {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.action-button:hover svg {
+  opacity: 1;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+  border-top: 1px solid #f5f5f5;
+  padding: 12px;
+  position: relative;
+}
+
+.textarea {
+  margin-top: 16px;
+  resize: none !important;
+  outline: none;
+  height: 200px !important;
+  overflow: auto;
+  border: 1px solid var(--primary) !important;
+
+  &:focus {
+    border: 1px solid var(--primary) !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  border: none;
+  background-color: var(--primary);
+}

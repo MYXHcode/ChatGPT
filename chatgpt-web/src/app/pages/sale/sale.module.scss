@@ -1,0 +1,124 @@
+.sale {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "黑体", sans-serif;
+  overflow-y: scroll;
+}
+
+.product {
+  width: 250px;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px auto 0;
+  display: block;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+}
+
+.product-name {
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.product-token {
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #020202;
+  margin: 25px auto 0;
+}
+
+.product-token-subscript {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.product-desc {
+  margin: 0 auto 10px;
+  width: 220px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.product-price {
+  width: 250px;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #020202;
+  margin: 20px auto 0;
+}
+
+.product-buy {
+  margin: 20px auto;
+  width: 180px;
+  font-size: 18px;
+  background-color: #018d01;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.product-pay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--window-width);
+  height: var(--full-height);
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.product-pay-weixin {
+  position: fixed;
+  margin-top: -210px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+.product-pay-close {
+  position: fixed;
+  margin-top: 200px;
+  background-color: #3b2300;
+  color: #f6f6f6;
+  border-radius: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.product-pay-url {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0ba800;
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.product-pay-prompt {
+  position: fixed;
+  margin-top: 260px;
+  color: #2a2a2a;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.QRCode {
+  transform: scale(4); /* 放大 QRCode 的尺寸 */
+}

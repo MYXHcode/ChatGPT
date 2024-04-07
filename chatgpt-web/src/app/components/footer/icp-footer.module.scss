@@ -1,0 +1,30 @@
+.footer-bottom {
+  // 背景色，可以根据需要调整
+  background-color: #f5f5f5;
+
+  // 文字颜色，可以根据需要调整
+  color: #212529;
+
+  //链接颜色 绿色
+  a {
+    color: #3eaf7c;
+  }
+
+  // 文本居中
+  text-align: center;
+
+  // 绝对定位
+  position: absolute;
+
+  // 底部定位
+  bottom: 0;
+
+  // 宽度为 100%，以确保 footer 覆盖整个容器
+  width: 100%;
+
+  // 减少 padding，可以减少内部内容的空间
+  padding: 0.1px 0;
+
+  // 减少字体大小
+  font-size: 0.7rem;
+}
